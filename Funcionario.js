@@ -15,7 +15,13 @@ class Funcionario{
     this.cargo = cargo;
     this.salarioBaseMensal = salarioBaseMensal;
     this.numeroDependentes = numeroDependentes;}
+
+    //Criando um método p/ settar a data de contratação
+    setDataContr(data){
+        this.dataContratacao = data;
+    }
    
+    //Criando um método para settar o Reajuste do salário
     reajusteSalarioBase(aumentoSalario){
         return salarioBaseMensal += aumentoSalario/100 * salarioBaseMensal
     }
