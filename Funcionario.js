@@ -8,8 +8,8 @@ class Funcionario{
     numeroDependentes;
 
     /*criação do método construtor*/
-    constructor (CPF, nomeCompleto, depto, cargo, salarioBaseMensal, numeroDependentes){
-    this.CPF = CPF;
+    constructor (cpf, nomeCompleto, depto, cargo, salarioBaseMensal, numeroDependentes){
+    this.cpf = cpf;
     this.nomeCompleto = nomeCompleto;
     this.depto = depto;
     this.cargo = cargo;
