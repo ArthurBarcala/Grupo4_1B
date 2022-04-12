@@ -26,5 +26,4 @@ class Funcionario{
         return salarioBaseMensal += aumentoSalario/100 * salarioBaseMensal
     }
     
-    
 }
