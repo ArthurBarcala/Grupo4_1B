@@ -8,7 +8,8 @@ class Funcionario{
     numeroDependentes;
 
     /*criação do método construtor*/
-    constructor (CPF, nomeCompleto, depto, cargo, salarioBaseMensal, numeroDependentes){this.CPF = CPF;
+    constructor (CPF, nomeCompleto, depto, cargo, salarioBaseMensal, numeroDependentes){
+    this.CPF = CPF;
     this.nomeCompleto = nomeCompleto;
     this.depto = depto;
     this.cargo = cargo;
@@ -34,5 +35,20 @@ class Funcionario{
     getNumDependentes(){
         return this.numeroDependentes
     }
+    //criando métodos setters
+    setDepto(departamento){
+        this.depto = departamento
+    }
+    setCargo(novoCargo){
+        this.cargo = novoCargo
+    }
+    setNumDependentes(dependentes){
+        this.numeroDependentes = dependentes
+    }
+    //Criando um método para settar o Reajuste do salário
+    reajustarSalarioBase(aumentoSalario){
+        return salarioBaseMensal += aumentoSalario/100 * salarioBaseMensal
+    }
+    
     
 }
