@@ -1,5 +1,5 @@
 class Funcionario{
-    CPF;
+    cpf;
     nomeCompleto;
     dataContratacao;
     depto;
@@ -15,9 +15,24 @@ class Funcionario{
     this.salarioBaseMensal = salarioBaseMensal;
     this.numeroDependentes = numeroDependentes;}
 
-    //Criando um método p/ settar a data de contratação
-    setDataContr(data){
-        this.dataContratacao = data;
+    //Criando métodos getters
+    getCpf(){
+        return this.cpf
     }
-   
+    getNomeCompleto(){
+        return this.nomeCompleto
+    }
+    getDepto(){
+        return this.depto
+    }
+    getCargo(){
+        return this.cargo
+    }
+    getSalarioBase(){
+        return this.salarioBaseMensal
+    }
+    getNumDependentes(){
+        return this.numeroDependentes
+    }
+    
 }
